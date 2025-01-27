@@ -11,13 +11,11 @@ if (!JEE_AhkIsAdmin())	{
 
 Gui, Add, GroupBox, x11 y2 w370 h50 , Add Click
 
+; Aqui você escolhe o que vai aparecer no checkbox ao executar o script. Irá aparecer as opções F1 a F9 você pode mudar para o que quiser.
 Gui, Add, CheckBox, x21 y22 w38 h24 vF1ClickStatus gSubmitClickStatus, F1
 Gui, Add, CheckBox, x61 y22 w38 h24 vF2ClickStatus gSubmitClickStatus, F2
 Gui, Add, CheckBox, x101 y22 w38 h24 vF3ClickStatus gSubmitClickStatus, F3
-
-; Letra que vai aparecer no checkbox ao executar o script. Como eu uso a skill impacto flamejante na tecla F coloquei para aparecer F, vc pode mudar para a tecla que quiser.
-Gui, Add, CheckBox, x141 y22 w38 h24 vFClickStatus gSubmitClickStatus, F
-
+Gui, Add, CheckBox, x141 y22 w38 h24 vFClickStatus gSubmitClickStatus, F4
 Gui, Add, CheckBox, x181 y22 w38 h24 vF5ClickStatus gSubmitClickStatus, F5
 Gui, Add, CheckBox, x221 y22 w38 h24 vF6ClickStatus gSubmitClickStatus, F6
 Gui, Add, CheckBox, x261 y22 w38 h24 vF7ClickStatus gSubmitClickStatus, F7
@@ -43,8 +41,8 @@ return
 
 updateFKeys:
 {
-  ; Abaixo desse comentário em i := eu coloquei a letra f pra quando eu segurar a tecla f ficar spamando a skill. Caso for usar skills de F1 a F4 mude i := f para i := 1 exemplo: i := 1
-	i := f
+  ; Caso queira ao invés de spamar a skill com F4 usar a letra F por exemplo, mude i := 1 para i := f
+	i := 1
 	Loop, 9 {
 		hotkey, f%i%, spam
 		i := i + 1

@@ -22,9 +22,9 @@ Gui, Add, CheckBox, x261 y22 w38 h24 vF7ClickStatus gSubmitClickStatus, F7
 Gui, Add, CheckBox, x301 y22 w38 h24 vF8ClickStatus gSubmitClickStatus, F8
 Gui, Add, CheckBox, x341 y22 w38 h24 vF9ClickStatus gSubmitClickStatus, F9
 ; Generated using SmartGUI Creator 4.0
-Gui, Show, x404 y316 h67 w393, Ragnarok Skill Spammer
+Gui, Show, x404 y316 h67 w393, Spammer de Habilidades Ragnarok Online BR
 
-Gui, Add, Link, x341 y52 w40 h20 , <a href="https://github.com/Enkimaru/RagnarokSkillSpammer">v1.02</a>
+Gui, Add, Link, x341 y52 w40 h20 , <a href="https://github.com/nesquik-bunny/spam-de-skill-ragnarok-br/SpamSkill">v1.02</a>
 
 Gui, Submit, NoHide
 gosub, updateFKeys
